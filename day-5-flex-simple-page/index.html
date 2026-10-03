@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Flex Page</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo" alt="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Game Controller</a></li>
+                    <li><a href="#">VR Accessories</a></li>
+                    <li><a href="#">Media Remotes</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" alt="menu"
+            onclick="toggleMenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4  V2 <br> Dualshock 4</h2>
+                <h3>Wirless Controller for PlayStation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+                <button type="button">Buy Now <img src="images/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="images/laptop.png" class="Controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images/add.png" alt="">
+                    <p><small>Add To Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "130px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+        }
+    </script>
+</body>
+</html>

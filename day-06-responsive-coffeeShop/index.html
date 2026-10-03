@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <ul id="navMenu">
+                <i class="fa fa-close close-icon" id="closeMenu"></i>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa fa-cart-shopping"></i>
+                <i class="fa fa-search"></i>
+                <i class="fa fa-bars menu-icon" id="openMenu"></i>
+            </div>
+        </nav>
+        <main>
+            <div class="left-section">
+                <h1>Start your day with coffee</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                   Porro nihil earum aut pariatur, saepe eos ducimus illo 
+                   molestias quas inventore ratione eum consectetur. Ab 
+                   blanditiis natus eius dicta. Minima?
+                </p>
+                <button class="left-btn">Shop Now</button>
+            </div>
+            <div class="right-section">
+                <img src="images/coffee.png" alt="">
+            </div>
+        </main>
+    </header>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let openMenu = document.getElementById('openMenu');
+            let closeMenu = document.getElementById('closeMenu');
+            let navMenu = document.getElementById('navMenu');
+
+            openMenu.addEventListener("click", () => {
+                navMenu.style.right = "0px";
+            })
+
+            closeMenu.addEventListener("click", () => {
+                navMenu.style.right = "-200px";
+            })
+        })
+    </script>
+</body>
+</html>
